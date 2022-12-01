@@ -1,0 +1,668 @@
+
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: #f0f1f4;
+}
+
+.container__all{
+    position:relative;
+    right: 0;
+    transition: all 300ms;
+
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    font-family: 'K2D', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    
+    transition: all 300ms;
+}
+
+.move_content{
+    right: 260px;
+}
+
+.container__header{
+    
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.container__nav{
+    position: relative;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0px 20px;
+    list-style: none;
+}
+nav ul li a{
+    color: #373737;
+    font-size: 14px;
+}
+
+.select{
+    background: #21c579;
+    padding: 10px 30px;
+    color: black;
+    border-radius: 20px;
+}
+
+.nav_mod{
+    height: 70px;
+    box-shadow: 1px 1px 10px 0px #00000010;
+    background: white;
+}
+
+/*cover*/
+
+.cover{
+    width: 100%;
+    padding-bottom: 60px;
+    font-family: 'K2D', sans-serif;
+    margin-top: 100px;
+}
+
+.container__cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cover .container__info{
+    max-width: 400px;
+    margin-top: 40px;
+    z-index: 2;
+}
+.cover h1{
+    max-width: 400px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #373737;
+}
+
+.cover h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: #373737;
+    margin-top: 0px;
+}
+
+.cover h3{
+    font-size: 20px;
+    font-weight: 900;
+    color: #373737;
+    margin-top: +35px;
+}
+
+.container__apps{
+    display: flex;
+}
+
+.container__apps img{
+    width: 200px;
+}
+
+.container__imagen_tienda{
+    position: relative;
+}
+.container__imagen_tienda img{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 600px;
+    transition: all 300ms;
+}
+
+/*responsive*/
+
+.btn_menu{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+    display: none;
+}
+
+.btn_menu:hover{
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 920px){
+    .container__imagen_tienda img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .container__nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn_menu{
+        display: flex;
+    }
+
+    nav{
+        height: 100%;
+        background: #f1faff;
+        position: fixed;
+        top: 0;
+        right: -260px;
+        padding: 0 40px;
+        transition: all 300ms;
+        
+    }
+
+    .move_nav{
+        right: 0px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        margin: 20px 0px;
+    }
+
+    .container__imagen_tienda img{
+        transform: scale(0);
+        animation:  none;
+    }
+}
+
+/*footer*/
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'K2D', sans-serif;
+    background-size: cover;
+    
+
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 180px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+/**/
+
+#pricing{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'K2D', sans-serif;
+}
+
+.precio{
+    position: relative;
+}
+
+.dolar{
+    position: absolute;
+    left: 70px;
+    color: #343434;
+}
+
+.numero{
+    font-size: 50px;
+    color: #5ae031;
+}
+
+.mes{
+    font-size: 13px;
+    color: #343434;
+}
+
+.tabla{
+    background: #f0f1f4;
+    padding: 60px;
+    margin: 10px;
+    margin-top: -10px;
+
+}
+
+.caracteristicas{
+    font-size: 14px;
+    color: #343434;
+    padding: 20px;
+}
+
+.caracteristicas p{
+   
+    padding: 10px;
+}
+
+.nuevoboton{
+    background: #7fe461;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 22px;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+
+.precio_planes{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'K2D', sans-serif;
+    
+}
+
+/**/
+
+.propiedades{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'K2D', sans-serif;
+}
+.imagenes{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.textoimagen{
+    padding: auto;
+    margin: 40px;
+}
+
+.textoimagen img{
+    width: 200px;
+}
+
+.textoimagen2{
+    padding: auto;
+    margin: 40px;
+}
+.textoimagen2 img{
+    width: 230px;
+}
+
+.tituloimagen{
+    margin-bottom: 20px;
+}
+
+/**/
+
+.subtitle{
+    color: #373737;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    font-family: 'K2D', sans-serif;
+  
+    
+}
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'K2D', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1150px;
+    
+    
+}
+.about__img{
+    text-align: center;
+    padding-left: 100px;
+}
+
+.about__picture{
+    max-width: 80%;
+}
+/**/
+.empresas{
+    min-height: 100px;
+    font-family: 'K2D', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1150px;
+}
+
+.title10{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.subtitle10{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.palabras{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.maspalabras{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.tienda{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+.point{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+/**/
+
+.Plan_companies{
+    min-height: 100px;
+    font-family: 'K2D', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1150px;
+}
+
+.contenedor_elementos{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+    
+}
+
+.title2{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.subtitle2{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.content2{
+margin-bottom: 13px;
+font-weight: 300;
+text-align: center;
+line-height: 24px;
+}
+
+
+
+.boton2{
+    background: #7fe461;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 22px;
+    margin-top: 20px;
+    text-align: center;
+    
+    
+}
+
+
+/*cards*/
+
+.container__card{
+    max-width: 1200px;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.card{
+    width: 300px;
+    position: relative;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms;
+    border-radius: 20px;
+}
+
+.card:hover{
+    box-shadow: 1px 1px 20px -10px #20202049;
+}
+
+.card:hover .info__description{
+    margin-top: 0;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.card:hover .icon{
+    margin-top: -110px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.icon{
+    width: 100%;
+    height: 220px;
+    background: f0f1f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.icon i{
+    font-size: 150px;
+    color: #fff;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+}
+
+.info__description{
+    width: 100%;
+    height: 220px;
+    color: #474747;
+    background: #f0f1f4;
+    padding: 20px;
+    margin-top: -220px;
+    transition: all 400ms cubic-bezier(0.5,0,0,1);
+    border-radius: 20px;
+}
+
+.info__description p{
+    font-size: 14px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    overflow: hidden;
+}
+
+.c1:hover .icon{
+    background: #7fe461;
+}
+
+.c1 .icon i{
+    color: #7fe461;
+}
+
+.c1:hover .icon i{
+    color: white;
+    background-color: #7fe461;
+}
+
+
+.c2:hover .icon{
+    background: #5be2cc;
+}
+
+.c2 .icon i{
+    color: #5be2cc;
+}
+
+.c2:hover .icon i{
+    color: white;
+    background-color: #5be2cc;
+}
+
+
+.c3:hover .icon{
+    background: #a3e947;
+}
+
+.c3 .icon i{
+    color: #a3e947;
+}
+
+.c3:hover .icon i{
+    color: white;
+    background-color: #a3e947;
+}
+
+.title3{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-family: 'K2D', sans-serif;
+}
+
+
+
+

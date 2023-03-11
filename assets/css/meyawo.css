@@ -69,7 +69,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus {
@@ -11074,8 +11074,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
-  font-family: 'Baloo Paaji', cursive;
-  color: #695aa6;
+  font-family: 'K2D', cursive;
+  color: #ffc107;
 }
 
 .my-font {
@@ -12089,7 +12089,7 @@ pre .code {
 .header .header-content .header-title .up {
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 500;
-  color: #444;
+  color: #ce5700;
   margin-bottom: 5px;
   position: relative;
   display: block;
@@ -12121,7 +12121,7 @@ pre .code {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: .8;
-  color: #212529;
+  color: #ce5700;
 }
 
 .header-mini {

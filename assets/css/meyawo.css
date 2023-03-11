@@ -15,7 +15,7 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
 :root {
   --blue: #1e549f;
-  --indigo: #695aa6;
+  --indigo: #ffc107;
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #ec185d;
@@ -27,7 +27,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #393e46;
-  --primary: #695aa6;
+  --primary: #ffc107;
   --secondary: #393e46;
   --success: #1bb74f;
   --info: #17a2b8;
@@ -162,7 +162,7 @@ sup {
 }
 
 a {
-  color: #695aa6;
+  color: #ffc107;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4523,7 +4523,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #695aa6;
+  background-color: #ffc107;
 }
 
 .nav-fill .nav-item {
@@ -5821,7 +5821,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #695aa6;
+  background-color: #ffc107;
   -webkit-transition: width 0.6s ease;
   transition: width 0.6s ease;
 }
@@ -5930,8 +5930,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
   z-index: 2;
   color: #fff;
-  background-color: #695aa6;
-  border-color: #695aa6;
+  background-color: #ffc107;
+  border-color: #ffc107;
 }
 
 .list-group-horizontal {
@@ -7141,7 +7141,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #695aa6 !important;
+  background-color: #ffc107 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7269,7 +7269,7 @@ button.bg-dark:focus {
 }
 
 .border-primary {
-  border-color: #695aa6 !important;
+  border-color: #ffc107 !important;
 }
 
 .border-secondary {
@@ -10776,7 +10776,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #695aa6 !important;
+  color: #ffc107 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10964,12 +10964,12 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 ::-moz-selection {
-  background: #695aa6;
+  background: #ffc107;
   color: white;
 }
 
 ::selection {
-  background: #695aa6;
+  background: #ffc107;
   color: white;
 }
 
@@ -11029,7 +11029,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .infos .social-links a:hover {
-  color: #695aa6;
+  color: #ffc107;
 }
 
 /* contact section */
@@ -11702,7 +11702,7 @@ pre .code {
 }
 
 .custom-navbar .nav .item .link:hover, .custom-navbar .nav .item .link.active {
-  color: #695aa6;
+  color: #ffc107;
 }
 
 .custom-navbar.affix {
@@ -11711,7 +11711,7 @@ pre .code {
 }
 
 .custom-navbar.affix .logo {
-  color: #695aa6;
+  color: #ffc107;
 }
 
 .custom-navbar.affix .container {
@@ -12025,8 +12025,8 @@ pre .code {
 }
 
 .footer .social-links a:hover {
-  background: #695aa6;
-  border-color: #695aa6;
+  background: #ffc107;
+  border-color: #ffc107;
   color: #fff;
   text-decoration: none;
 }
@@ -12061,7 +12061,7 @@ pre .code {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../imgs/header.jpg);
+  background-image: url(../imgs/header-new2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -12089,7 +12089,7 @@ pre .code {
 .header .header-content .header-title .up {
   font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 500;
-  color: #ce5700;
+  color: #000;
   margin-bottom: 5px;
   position: relative;
   display: block;
@@ -12121,7 +12121,7 @@ pre .code {
   font-size: 2.4rem;
   font-weight: bold;
   opacity: .8;
-  color: #ce5700;
+  color: #000;
 }
 
 .header-mini {
